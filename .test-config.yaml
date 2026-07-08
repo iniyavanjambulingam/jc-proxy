@@ -1,0 +1,14 @@
+listen:
+  port: 0
+  host: 127.0.0.1
+security:
+  apiKeys:
+    - key: key1-abc
+      allowedModels:
+        - model-a
+    - key: key2-def
+      allowedModels: []
+  adminKey: admin-test
+routing:
+  mode: priority
+  providers: []

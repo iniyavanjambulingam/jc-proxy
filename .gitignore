@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+config/config.yaml
+data/*
+!data/.gitkeep
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Runtime
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Kimchi workspace / IDE tools
+.kimchi/
+.mimocode/
