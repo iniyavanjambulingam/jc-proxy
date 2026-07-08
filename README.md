@@ -92,7 +92,9 @@ claudeCode:
 
 ## Admin Dashboard
 
-Once running, navigate to `http://localhost:3000/admin` in your browser. 
+![jc-proxy Admin Login](docs/dashboard-login.png)
+
+The admin dashboard is exclusively accessible at `http://localhost:3000/admin`. 
 - Authenticate using the `security.adminKey` defined in your configuration.
 - Manage provider API keys, fallback chains, and model aliases in real-time.
 - View detailed routing logs, status codes, and latency metrics.
