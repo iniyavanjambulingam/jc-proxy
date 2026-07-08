@@ -1,0 +1,29 @@
+listen:
+  port: 3000
+  host: 0.0.0.0
+
+security:
+  apiKeys:
+    - key: sk-your-app-api-key-1
+      allowedModels: []
+  adminKey: your_admin_dashboard_password_here
+
+routing:
+  mode: priority # priority | round-robin | random
+  providers:
+    - id: 'gemini-primary'
+      type: gemini
+      apiKey: AIzaSy_YOUR_GEMINI_API_KEY_HERE
+    - id: 'groq-backup'
+      type: groq
+      apiKey: gsk_YOUR_GROQ_API_KEY_HERE
+
+webSearch:
+  tavilyApiKey: tvly_YOUR_TAVILY_API_KEY_HERE
+  searxngUrl: http://searxng:8080
+
+claudeCode:
+  enabled: true
+  target: gemini-3.1-flash-lite-preview
+  fallbacks:
+    - gemini-2.5-flash

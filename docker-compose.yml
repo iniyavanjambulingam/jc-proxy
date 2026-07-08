@@ -22,7 +22,7 @@ services:
       - ./searxng/settings.yml:/etc/searxng/settings.yml:ro
     environment:
       - SEARXNG_BASE_URL=http://searxng:8080/
-      - SEARXNG_SECRET=${SEARXNG_SECRET:-90f4549d1db7000959fcec0aff8a5d9297c332af60279134f956f765e1a3e220}
+      - SEARXNG_SECRET=${SEARXNG_SECRET:-your_searxng_secret_key_here}
     depends_on:
       redis:
         condition: service_healthy
